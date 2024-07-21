@@ -21,3 +21,15 @@ This file contains the processed data, which has been cleaned and prepared for a
 - Correcting data formats
 - Filtering irrelevant data
 
+#### Columns:
+- `listing_id`: Unique identifier for each listing
+- `trim`: Trim level of the car
+- `make`: Car manufacturer
+- `year`: Model year of the car
+- `model`: Car model
+- `price`: Listed price of the car
+- `body_style`: Body style of the car (e.g., sedan, SUV)
+- `city`: City where the car is located
+- `state`: State where the car is located
+- `mileage`: Mileage of the car
+- `stock_type`: Type of stock (e.g., used)
