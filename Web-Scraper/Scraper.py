@@ -10,7 +10,7 @@ from urllib.parse import parse_qs, urlparse
 url_template = "https://www.cars.com/shopping/results/?page={}&page_size=100&sort=listed_at_desc&stock_type=used&makes[]=chevrolet&year_max=2024&year_min=2010&zip=00000"
 headers = {'User-Agent': 'Safari/537.3'}
 
-# NAming the columns for the DataFrame
+# Naming the columns for the DataFrame
 df_columns = ['Listing ID', 'Trim', 'Make', 'Year', 'Model', 'Price', 'Body Style', 'City', 'State', 'Mileage', 'Stock Type']
 
 # Scrape pages function
