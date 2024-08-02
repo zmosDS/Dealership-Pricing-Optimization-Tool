@@ -22,24 +22,24 @@ The web scraper was built using BeautifulSoup to parse the HTML and extract the 
 - No mileage limit
 - No monthly payment filter
 - 100 listings per page
-- Sorted by best match
+- Sorted by Newest listed
 - Used cars only
 - Year range: 2010-2024
 - ZIP code: 00000 (avoid location bias)
 
 #### Determine Listing Details to Scrape
 The data points extracted include:
-- `listing_id`: Unique identifier for each listing
-- `trim`: Trim level of the car
-- `make`: Car manufacturer
-- `year`: Model year of the car
-- `model`: Car model
-- `price`: Listed price of the car
-- `body_style`: Body style of the car (e.g., sedan, SUV)
-- `city`: City where the car is located
-- `state`: State where the car is located
-- `mileage`: Mileage of the car
-- `stock_type`: Type of stock (e.g., used)
+- `Listing ID`: Unique identifier for each listing
+- `Trim`: Trim level of the car
+- `Make`: Car manufacturer
+- `Year`: Model year of the car
+- `Model`: Car model
+- `Price`: Listed price of the car
+- `Body Style`: Body style of the car (e.g., sedan, SUV)
+- `City`: City where the car is located
+- `State`: State where the car is located
+- `Mileage`: Mileage of the car
+- `Stock Type`: Type of stock (e.g., used)
 
 ## Results
 Each scrape of the top 10 car manufacturers (10 scrapes total, one for each manufacturer) resulted in approximately 8,200-8,700 rows, and each scrape took less than 5 minutes to complete.
