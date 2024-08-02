@@ -10,8 +10,8 @@ Each scrape of the top 10 car manufacturers (10 scrapes total, one for each manu
 <img width="746" alt="Screenshot 2024-08-02 at 3 14 37 PM" src="https://github.com/user-attachments/assets/869c1bc7-598f-45b5-b998-9314a50881c2">
 
 ### Final CSV file after combining all 10 Top Car Manufacturers (84,676 rows)
-- `july-21st-raw-data.csv`
 <img width="749" alt="Screenshot 2024-08-02 at 3 18 25 PM" src="https://github.com/user-attachments/assets/fc7a0f3d-1213-439e-90ed-7219b878f63c">
+- `july-21st-raw-data.csv`
 
 ## Implementation
 
