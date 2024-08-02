@@ -6,12 +6,12 @@ US Automotive Market Insights aims to gather and analyze car pricing data across
 ## Project Structure
 The repository is organized into the following directories:
 
-- `Web-Scraper/`: Contains the web scraper code and related documentation.
-- `Data-Analysis/`: Contains the exploratory data analysis (EDA) and modeling notebooks.
-  - `EDA/`: Exploratory Data Analysis.
-  - `Price-Predictor/`: Contains the price prediction system, including data cleaning, model comparison, optimization, and final model.
-  - `Price-Recommender-GUI/`: Contains the GUI for price recommendations.
-  - `Depreciation-Analysis/`: Contains the analysis of car depreciation from 2010 to 2024, including different makes and types (gas, EV).
+- `web-ccraper/`: Contains the web scraper code and related documentation.
+- `data-analysis/`: Contains the exploratory data analysis (EDA) and modeling notebooks.
+  - `eda/`: Exploratory Data Analysis.
+  - `price-predictor/`: Contains the price prediction system, including data cleaning, model comparison, optimization, and final model.
+  - `price-recommender-gui/`: Contains the GUI for price recommendations.
+  - `depreciation-analysis/`: Contains the analysis of car depreciation from 2010 to 2024, including different makes and types (gas, EV).
 - `data/`: Contains sample raw and processed data used in the analyses.
 
 
