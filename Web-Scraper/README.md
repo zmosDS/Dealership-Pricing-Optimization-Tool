@@ -7,6 +7,7 @@ The goal of this project is to build a web scraper to gather data on used cars f
 
 ### Step 1: Identify Target Cars/Listings
 To manage the data volume, I focused on the top 10 car manufacturers in the US for 2023, identified using [Statista](https://www.statista.com/statistics/264362/leading-car-brands-in-the-us-based-on-vehicle-sales/).
+https://www.carpro.com/blog/national-auto-sales-numbers-for-all-automakers-in-2023
 
 ### Step 2: Build the Web Scraper with BeautifulSoup
 The web scraper was built using BeautifulSoup to parse the HTML and extract the required details. Each car make had its dedicated scraper script, modifying the URL to filter by make, page size, stock type, etc.
