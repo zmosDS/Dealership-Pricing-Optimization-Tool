@@ -17,7 +17,7 @@ The web scraper was built using BeautifulSoup to parse the HTML and extract the 
 - All dealers
 - No keyword filter
 - No price range limits
-- Specified make (e.g., Chevrolet)
+- Specify make (e.g., Chevrolet)
 - Nationwide search
 - No mileage limit
 - No monthly payment filter
@@ -25,7 +25,7 @@ The web scraper was built using BeautifulSoup to parse the HTML and extract the 
 - Sorted by best match
 - Used cars only
 - Year range: 2010-2024
-- Specific ZIP code
+- ZIP code: 00000 (avoid location bias)
 
 #### Determine Listing Details to Scrape
 The data points extracted include:
@@ -40,15 +40,16 @@ The data points extracted include:
 - `state`: State where the car is located
 - `mileage`: Mileage of the car
 - `stock_type`: Type of stock (e.g., used)
-<img width="500" alt="Screenshot 2024-07-05 at 4 47 39 PM" src="https://github.com/user-attachments/assets/6edf19c3-a803-4d33-975a-fbe68562122e">
 
 ## Results
-Each scrape of the top 10 car manufacturers (10 scrapes total, one for each manufacturer) resulted in approximately 9,200-9,500 rows, and each scrape took about 60 minutes to complete.
+Each scrape of the top 10 car manufacturers (10 scrapes total, one for each manufacturer) resulted in approximately 8,200-8,700 rows, and each scrape took less than 5 minutes to complete.
 
-### CSV file from Chevrolet Scrape (9,333 rows)
-<img width="743" alt="Screenshot 2024-07-20 at 11 45 06 PM" src="https://github.com/user-attachments/assets/aecc890b-01a9-4d7f-86b3-d5e5d8a1299d">
+### CSV file from Chevrolet Scrape (8,523 rows)
+<img width="746" alt="Screenshot 2024-08-02 at 3 14 37 PM" src="https://github.com/user-attachments/assets/869c1bc7-598f-45b5-b998-9314a50881c2">
 
-### Final CSV file after combining all 10 Top Car Manufacturers
-<img width="752" alt="Screenshot 2024-07-20 at 11 53 35 PM" src="https://github.com/user-attachments/assets/903bca73-b586-4575-b82c-649d0b930643">
+### Final CSV file after combining all 10 Top Car Manufacturers 
+`july-21st-raw-data.csv`
+<img width="749" alt="Screenshot 2024-08-02 at 3 18 25 PM" src="https://github.com/user-attachments/assets/fc7a0f3d-1213-439e-90ed-7219b878f63c">
 
-#### The final dataset, which includes over 97,000 rows of used car listings from the top 10 car brands, is comprehensive and ready for further analysis.
+
+#### The final dataset, which includes over 84,000 rows of used car listings from the top 10 car brands, is comprehensive and ready for further analysis.
