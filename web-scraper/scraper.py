@@ -21,7 +21,6 @@ def scrape_pages(scrape_all_pages=False, max_pages=100): # significantly diminis
     rows_list = []  # List to collect each row dictionary
 
     while True:
-        print(f"Scraping page: {page_number}") #prints each page being scraped as it runs
         url = url_template.format(page_number)
         response = requests.get(url, headers=headers)
         soup = BeautifulSoup(response.content, 'html.parser')
