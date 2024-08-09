@@ -9,7 +9,7 @@ def scrape_pages(scrape_all_pages=False, max_pages=100):
     """
     Scrapes vehicle listings from the cars.com website and returns a DataFrame.
 
-    Args:
+    Parameters:
         scrape_all_pages (bool): Whether to scrape all available pages or stop after a certain number.
         max_pages (int): Maximum number of pages to scrape if not scraping all pages.
 
