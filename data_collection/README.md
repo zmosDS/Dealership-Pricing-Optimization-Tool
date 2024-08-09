@@ -17,8 +17,7 @@ Each scrape of the top 10 car manufacturers (10 scrapes total, one for each manu
 ## Implementation
 
 ### Step 1: Identify Target Cars/Listings
-To manage the data volume, I focused on the top 10 car manufacturers in the US for 2023, identified using [Statista](https://www.statista.com/statistics/264362/leading-car-brands-in-the-us-based-on-vehicle-sales/).
-https://www.carpro.com/blog/national-auto-sales-numbers-for-all-automakers-in-2023
+To manage the data volume, I focused on the top 10 car manufacturers in the US for 2023, identified using [Carpro Blog](https://www.carpro.com/blog/national-auto-sales-numbers-for-all-automakers-in-2023/).
 
 ### Step 2: Build the Web Scraper with BeautifulSoup
 The web scraper was built using BeautifulSoup to parse the HTML and extract the required details. Each car make had its dedicated scraper script, modifying the URL to filter by make, page size, stock type, etc.
@@ -40,7 +39,7 @@ The web scraper was built using BeautifulSoup to parse the HTML and extract the 
 
 #### Determine Listing Details to Scrape
 Used safari inspector to extract the data points I wanted to use.
-<img width="1275" alt="Screenshot 2024-08-08 at 5 34 32 PM" src="https://github.com/user-attachments/assets/15014472-b4d4-421d-90b3-d9df0ef5b40f">
+<img width="1274" alt="Screenshot 2024-08-08 at 5 34 32 PM" src="https://github.com/user-attachments/assets/0b61aa7f-5c86-40ef-b248-ce96e49e2462">
 
 
 The data points extracted include:
