@@ -38,7 +38,7 @@ The web scraper was built using BeautifulSoup to parse the HTML and extract the 
 - ZIP code: 00000 (avoid location bias)
 
 #### Determine Listing Details to Scrape
-Used safari inspector to extract the data points I wanted to use.
+Used safari inspector to find the details/data to extract.
 <img width="1274" alt="Screenshot 2024-08-08 at 5 34 32 PM" src="https://github.com/user-attachments/assets/0b61aa7f-5c86-40ef-b248-ce96e49e2462">
 
 
