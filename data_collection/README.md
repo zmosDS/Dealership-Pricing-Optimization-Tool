@@ -39,6 +39,10 @@ The web scraper was built using BeautifulSoup to parse the HTML and extract the 
 - ZIP code: 00000 (avoid location bias)
 
 #### Determine Listing Details to Scrape
+Used safari inspector to extract the data points I wanted to use.
+<img width="1275" alt="Screenshot 2024-08-08 at 5 34 32 PM" src="https://github.com/user-attachments/assets/15014472-b4d4-421d-90b3-d9df0ef5b40f">
+
+
 The data points extracted include:
 - `Listing ID`: Unique identifier for each listing
 - `Trim`: Trim level of the car
