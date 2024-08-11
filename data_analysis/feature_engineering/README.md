@@ -11,6 +11,8 @@
   - Mean Absolute Error (MAE): 2236.81
   - Mean Squared Error (MSE): 10459830.55
   - R2 Score: 0.9396
+<img width="785" alt="Screenshot 2024-08-11 at 4 01 46 PM" src="https://github.com/user-attachments/assets/a9f772c5-702a-45a7-86b8-c7ee501be942">
+
 
 - **7 Features:**
   - Mean Absolute Error (MAE): 2216.44
