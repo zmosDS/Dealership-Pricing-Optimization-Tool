@@ -1,0 +1,93 @@
+{
+ "cells": [
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "5a82c4fa-5e01-4738-b30b-140b0060630d",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "# Import necessary libraries\n",
+    "import pandas as pd\n",
+    "import numpy as np\n",
+    "from pathlib import Path\n",
+    "from sklearnex import patch_sklearn\n",
+    "patch_sklearn()\n",
+    "from sklearn.model_selection import train_test_split\n",
+    "from sklearn.preprocessing import StandardScaler\n",
+    "import xgboost as xgb\n",
+    "from sklearn.metrics import mean_absolute_error, mean_squared_error, r2_score\n",
+    "\n",
+    "# Load the dataset\n",
+    "car_data_df = pd.read_csv(data_path / 'car_data_cleaned.csv')\n",
+    "\n",
+    "# Drop irrelevant columns\n",
+    "car_data_df.drop(columns=['Listing ID', 'Stock Type'], inplace=True)\n",
+    "\n",
+    "# Define features and target\n",
+    "features = ['Year', 'Model', 'State', 'Mileage', 'Trim', 'Make', 'Body Style']\n",
+    "X = pd.get_dummies(car_data_df[features], drop_first=False)\n",
+    "y = car_data_df['Price'].values.reshape(-1, 1)\n",
+    "\n",
+    "# Scale the features\n",
+    "scaler = StandardScaler()\n",
+    "X_scaled = scaler.fit_transform(X)\n",
+    "X_scaled = pd.DataFrame(X_scaled, columns=X.columns)\n",
+    "\n",
+    "# Split into train and test sets\n",
+    "X_train, X_test, y_train, y_test = train_test_split(X_scaled, y, test_size=0.2, random_state=1)\n",
+    "\n",
+    "# Print dataset information\n",
+    "print('Data imported & processed\\n')\n",
+    "print('Train & Test Set Rows, Columns:', X_train.shape, X_test.shape)\n",
+    "\n",
+    "# Define best hyperparameters\n",
+    "best_hyperparameters = {\n",
+    "    'subsample': 0.8, \n",
+    "    'reg_lambda': 10, \n",
+    "    'reg_alpha': 0.0001, \n",
+    "    'n_estimators': 1000, \n",
+    "    'min_child_weight': 2, \n",
+    "    'max_depth': 5, \n",
+    "    'learning_rate': 0.35, \n",
+    "    'gamma': 0.075, \n",
+    "    'colsample_bytree': 0.95\n",
+    "}\n",
+    "\n",
+    "# Train model\n",
+    "XGBoost_model = xgb.XGBRegressor(**best_hyperparameters)\n",
+    "XGBoost_model.fit(X_train, y_train.ravel())\n",
+    "\n",
+    "# Predictions on the test set\n",
+    "pred_XGBoost = XGBoost_model.predict(X_test)\n",
+    "\n",
+    "# Print model performance metrics\n",
+    "print(\"\\nOptimized XGBoost Model Performance:\")\n",
+    "print(\"Mean Absolute Error (MAE): \", mean_absolute_error(y_test, pred_XGBoost))\n",
+    "print(\"Mean Squared Error  (MSE): \", mean_squared_error(y_test, pred_XGBoost))\n",
+    "print(\"R2 Score             (R2): \", r2_score(y_test, pred_XGBoost))"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.11.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
