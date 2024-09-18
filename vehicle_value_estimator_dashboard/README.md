@@ -10,9 +10,9 @@ This dashboard is a vehicle value estimator that helps users estimate the price 
 - **Price Distribution**: A visual plot that shows the distribution of prices for similar vehicles in the dataset.
 - **Feature Importance**: A bar chart visualizing the importance of different features in determining the predicted value of the vehicle.
 
-## Screenshot
+## Screenshot of Dashboard
 
-![Dashboard Screenshot](./Users/z/Desktop/Screenshot_2024-09-18_at_3.06.15_AM.png)
+<img width="1220" alt="Screenshot 2024-09-18 at 3 00 37 AM" src="https://github.com/user-attachments/assets/5827b529-f541-47f5-b126-26a78c41c7c6">
 
 ## File Contents
 
