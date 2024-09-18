@@ -80,7 +80,7 @@ The Vehicle Value Estimator successfully predicts car prices with an MAE of `$1,
 
 The LightGBM model's ability to handle categorical data contributes to its high performance, making the predictions both accurate and robust across a variety of vehicle types. Additionally, the dashboard provides an intuitive interface, making the tool accessible even to non-technical users.
 
-# **By building this project, I have demonstrated my ability to:**
+## **By building this project, I have demonstrated my ability to:**
 - Collect and preprocess data.
 - Explore and analyze the relationships within the dataset.
 - Build, tune, and evaluate machine learning models.
