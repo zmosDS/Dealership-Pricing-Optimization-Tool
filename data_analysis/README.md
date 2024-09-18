@@ -1,4 +1,4 @@
 ## Data Analysis Structure
 
-- `EDA/`: Exploratory Data Analysis.
+- `eda/`: Exploratory Data Analysis.
 - `feature_engineering/`: Choose features.
