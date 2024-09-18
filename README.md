@@ -60,16 +60,18 @@ This tool can be utilized by:
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/vehicle-value-estimator.git```
+git clone https://github.com/yourusername/vehicle-value-estimator.git
+```
 
 ### 2. Install dependencies
 ```bash
-pip install -r requirements.txt```
+pip install -r requirements.txt
+```
 
 ### 3. Run the dashboard
 ```bash
-python vehicle_value_estimator_dashboard/estimated_value_dashboard.py```
-
+python vehicle_value_estimator_dashboard/estimated_value_dashboard.py
+```
 The dashboard will be available locally at `http://127.0.0.1:8050/` in your browser.
 
 ## Results and Conclusion
