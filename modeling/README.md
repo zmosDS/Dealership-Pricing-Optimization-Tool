@@ -27,8 +27,7 @@ The primary objective was to identify the top-performing model based on error me
 
 ### Key Findings:
 - **LightGBM** outperformed other models, with the best balance of accuracy and speed.
-- **CatBoost** also performed well but was slightly less efficient.
-- **XGBoost** required manual encoding and did not perform as efficiently as the categorical-specific models.
+- **XGBoost** required encoding and did not perform as efficiently as LightGBM.
 
 ---
 
