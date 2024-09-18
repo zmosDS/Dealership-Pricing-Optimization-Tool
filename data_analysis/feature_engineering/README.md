@@ -1,18 +1,28 @@
-# Feature Engineering for Car Price Prediction
+# Feature Engineering for Vehicle Price Prediction
 
-## Summary of Results
+## Objective
+The objective of this notebook is to evaluate various combinations of features for predicting vehicle prices using the LightGBM model. The goal is to identify the optimal feature set that balances **Mean Absolute Error (MAE)** and **Mean Squared Error (MSE)** while ensuring the model can generalize effectively to unseen data.
 
-### Key Findings
+## Process
 
-- **Final 7 Features Chosen:**  
-  `Year`, `Model`, `State`, `Mileage`, `Trim`, `Make`, `Body Style`
+1. **Feature Selection**:
+   - Tested different combinations of features from the dataset, ranging from 2 to 8 features.
+   - Each combination was evaluated on the test set using MAE, MSE, R² score, and execution time.
+   
+2. **Feature Combinations Tested**:
+   - **2 Features**: `Year`, `Model`
+   - **3 Features**: `Year`, `Model`, `Trim`
+   - **4 Features**: `Year`, `Model`, `Mileage`, `Trim`
+   - **Up to 8 Features**: Full feature set, including `Body Style`, `Make`, and `City`.
 
-- **Performance of the Final Model (7 Features):**
-  - Mean Absolute Error (MAE): 2216.44
-  - Mean Squared Error (MSE): 10367387.06
-  - R2 Score: 0.9402  
-  ![Boxplot for 7 Features](https://github.com/user-attachments/assets/c8c22af9-b9b7-4b9d-91ac-4b87bf726229)
+3. **Results**:
+   - The model with **7 features** demonstrated the best balance between generalization and accuracy.
+   - While the **8-feature model** had a slightly better MAE, the **7-feature model** showed a better MSE, indicating that it handles large errors more effectively.
+   - Removing the `City` feature improved the model's efficiency without sacrificing accuracy due to the high cardinality of that column (~3,000 unique values).
+
+4. **Validation**:
+   - Both the 7- and 8-feature models were applied to the validation set to assess generalization.
+   - The **7-feature model** was chosen as the final feature set for further optimization due to its ability to generalize better when exposed to new data.
 
 ## Conclusion
-
-The analysis demonstrates that using 7 features strikes the best balance between model performance and simplicity. The final model, with 7 features, achieves a slightly lower MAE and MSE than the model with 6 features while maintaining a high R2 score. Although adding an 8th feature provides marginally better performance, the complexity introduced by the "City" feature, which expands the feature set to 4,191 columns, outweighs the benefits. Limiting the model to 7 features results in a more efficient model with 980 columns, balancing accuracy and computational efficiency. Therefore, the 7-feature model is selected for the final implementation.
+The **7-feature model** is the best candidate for moving forward in the project. It strikes an optimal balance between reducing errors (MAE and MSE) and efficiently managing the high cardinality of the dataset's categorical features. The next steps involve applying hyperparameter optimization to further improve the model's performance.
