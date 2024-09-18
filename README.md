@@ -29,7 +29,7 @@ This tool can be utilized by:
 - **Initial Model**: The project started with **XGBoost** using manually encoded categorical features.
 - **Final Model**: The final model was developed using **LightGBM**, which achieved the best performance, natively handling categorical features.
 - **Performance**:
-  - Mean Absolute Error (MAE): **~$1,600**
+  - Mean Absolute Error (MAE): **~$1,700**
   - R² Score: **~0.96**
   
 ### 4. Dashboard Development
@@ -76,9 +76,11 @@ The dashboard will be available locally at `http://127.0.0.1:8050/` in your brow
 
 ## Results and Conclusion
 
-The **Vehicle Value Estimator** successfully predicts car prices with an impressive MAE of approximately $1,600. The LightGBM model's high performance, coupled with its ability to handle categorical data, ensures that the predictions are accurate and robust across a variety of vehicle types. The dashboard provides an intuitive interface, making the tool accessible even to non-technical users.
+The Vehicle Value Estimator successfully predicts car prices with an MAE of `$1,696`. Given that the vehicle prices in the dataset range from `$2,000` to `$150,000`, the MAE represents a relatively small error in comparison to the overall price range. The average vehicle price is approximately `$26,739`, meaning the MAE accounts for around `6.3%` of the average price, which indicates that the model provides reasonably accurate predictions.
 
-By building this project, I have demonstrated my ability to:
+The LightGBM model's ability to handle categorical data contributes to its high performance, making the predictions both accurate and robust across a variety of vehicle types. Additionally, the dashboard provides an intuitive interface, making the tool accessible even to non-technical users.
+
+**By building this project, I have demonstrated my ability to:**
 - Collect and preprocess data.
 - Explore and analyze the relationships within the dataset.
 - Build, tune, and evaluate machine learning models.
