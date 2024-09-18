@@ -29,8 +29,8 @@ This tool can be utilized by:
 - **Initial Model**: The project started with **XGBoost** using manually encoded categorical features.
 - **Final Model**: The final model was developed using **LightGBM**, which achieved the best performance, natively handling categorical features.
 - **Performance**:
-  - Mean Absolute Error (MAE): **~$1,700**
-  - R² Score: **~0.96**
+  - Mean Absolute Error (MAE): `~$1,700`
+  - R² Score: `~0.96`
   
 ### 4. Dashboard Development
 - **Framework**: The dashboard was built using **Dash**.
