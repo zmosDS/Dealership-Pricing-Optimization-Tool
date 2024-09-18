@@ -51,9 +51,9 @@ This tool can be utilized by:
 
 ## Key Technologies
 
-- **Data Scraping**: `requests`, `BeautifulSoup`
+- **Data Scraping**: `BeautifulSoup`, `requests`
 - **Data Processing and EDA**: `pandas`, `numpy`, `matplotlib`, `seaborn`
-- **Machine Learning**: `LightGBM`, `XGBoost`, `scikit-learn`
+- **Machine Learning**: `LightGBM`, `XGBoost`, `scikit-learn`, `CatBoost`
 - **Dashboard**: `Dash`, `Plotly`
   
 ## How to Run the Project
