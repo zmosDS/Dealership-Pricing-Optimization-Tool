@@ -65,12 +65,12 @@ git clone https://github.com/zmosDS/vehicle-value-estimator.git
 
 ### 2. Install dependencies
 ```bash
-pip install -r requirements.txt
+pip install -r vehicle-value-estimator/estimator_dashboard/requirements.txt
 ```
 
 ### 3. Run the dashboard
 ```bash
-python estimator_dashboard/estimator_dashboard.py
+python vehicle-value-estimator/estimator_dashboard/estimator_dashboard.py
 ```
 The dashboard will be available locally at `http://127.0.0.1:8050/` in your browser.
 
