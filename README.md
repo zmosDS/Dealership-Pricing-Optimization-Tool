@@ -40,6 +40,7 @@ The dashboard will be available locally at `http://localhost:8501` in your brows
 - **Dashboard**: `Dash`, `Plotly`
 
 ### Problem Statement
+
 Pricing vehicles accurately is a common challenge. Underpricing leads to lost revenue, while overpricing can result in slow inventory turnover. This project provides a data-driven solution that predicts vehicle prices with a high degree of accuracy, enabling individuals or businesses to optimize their vehicle pricing strategies.
 
 ## Project Highlights
