@@ -12,7 +12,7 @@ This dashboard is a vehicle value estimator that helps users estimate the price 
 
 ## Screenshot of Dashboard
 
-<img width="1220" alt="Screenshot 2024-09-18 at 3 00 37 AM" src="https://github.com/user-attachments/assets/5827b529-f541-47f5-b126-26a78c41c7c6">
+<img width="1135" alt="Screenshot 2024-09-19 at 3 29 46 AM" src="https://github.com/user-attachments/assets/48c43f88-bd38-4dcb-817a-5460f8db48a4">
 
 ## File Contents
 
