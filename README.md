@@ -60,7 +60,7 @@ This tool can be utilized by:
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/vehicle-value-estimator.git
+git clone https://github.com/zmosDS/vehicle-value-estimator.git
 ```
 
 ### 2. Install dependencies
