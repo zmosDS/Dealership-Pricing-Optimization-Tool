@@ -6,8 +6,13 @@ This project demonstrates the application of data science techniques to build a 
 
 The project showcases a full end-to-end data science pipeline, from data collection and exploration to model development, tuning, and deployment. The data was collected from Cars.com of the top 10 selling car manufacturers in 2023 ([US Auto Sales '23](https://www.carpro.com/blog/national-auto-sales-numbers-for-all-automakers-in-2023/)), ensuring a diverse yet focused dataset. The final output is a user-friendly dashboard where users can select vehicle details to receive an estimated price, along with visual insights into how different factors influence vehicle value.
 
-### Problem Statement
-Pricing vehicles accurately is a common challenge. Underpricing leads to lost revenue, while overpricing can result in slow inventory turnover. This project provides a data-driven solution that predicts vehicle prices with a high degree of accuracy, enabling individuals or businesses to optimize their vehicle pricing strategies.
+## Project Structure
+
+- **`data_collection/`**: Python scripts used for web scraping from Cars.com.
+- **`data/`**: Contains raw and cleaned datasets used for training and validation.
+- **`data_analysis/`**: Includes EDA and feature engineering notebooks.
+- **`modeling/`**: Jupyter notebooks documenting model comparison, optimization, evaluation, and validation processes.
+- **`vehicle_value_estimator_dashboard/`**: Code for the deployment-ready dashboard.
 
 ## How to Run the Project
 
@@ -34,12 +39,8 @@ The dashboard will be available locally at `http://localhost:8501` in your brows
 - **Machine Learning**: `LightGBM`, `XGBoost`, `scikit-learn`, `CatBoost`
 - **Dashboard**: `Dash`, `Plotly`
 
-## Project Structure
-
-- **`data/`**: Contains raw and cleaned datasets used for training and validation.
-- **`data_collection/`**: Python scripts used for web scraping from cars.com.
-- **`modeling/`**: Jupyter notebooks documenting model comparison, optimization, evaluation, and validation processes.
-- **`vehicle_value_estimator_dashboard/`**: Code for the deployment-ready dashboard.
+### Problem Statement
+Pricing vehicles accurately is a common challenge. Underpricing leads to lost revenue, while overpricing can result in slow inventory turnover. This project provides a data-driven solution that predicts vehicle prices with a high degree of accuracy, enabling individuals or businesses to optimize their vehicle pricing strategies.
 
 ## Project Highlights
 
