@@ -70,7 +70,7 @@ pip install -r requirements.txt
 
 ### 3. Run the dashboard
 ```bash
-python vehicle_value_estimator_dashboard/estimated_value_dashboard.py
+python estimator_dashboard/estimator_dashboard.py
 ```
 The dashboard will be available locally at `http://127.0.0.1:8050/` in your browser.
 
