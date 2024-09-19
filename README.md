@@ -76,11 +76,11 @@ The Vehicle Value Estimator successfully predicts car prices with an MAE of `$1,
 
 The LightGBM model's ability to handle categorical data contributes to its high performance, making the predictions both accurate and robust across a variety of vehicle types. Additionally, the dashboard provides an intuitive interface, making the tool accessible even to non-technical users.
 
-### Dashboard Screenshot
+## Dashboard Screenshot
 
 <img width="1136" alt="Screenshot 2024-09-19 at 3 25 59 AM" src="https://github.com/user-attachments/assets/c553479c-f95a-4d91-abe6-8c5deb7cebb0">
 
-## Target Audience
+### Target Audience
 This tool can be utilized by:
 - **Car dealerships** seeking to optimize pricing strategies.
 - **Private sellers** wanting to price their vehicles competitively.
