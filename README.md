@@ -80,7 +80,7 @@ The LightGBM model's ability to handle categorical data contributes to its high 
 
 <img width="1136" alt="Screenshot 2024-09-19 at 3 25 59 AM" src="https://github.com/user-attachments/assets/c553479c-f95a-4d91-abe6-8c5deb7cebb0">
 
-### Target Audience
+## Target Audience
 This tool can be utilized by:
 - **Car dealerships** seeking to optimize pricing strategies.
 - **Private sellers** wanting to price their vehicles competitively.
